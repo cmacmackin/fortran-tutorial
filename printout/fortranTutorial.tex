@@ -1,0 +1,35 @@
+\documentclass[letterpaper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{subcaption}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{multicol}
+\usepackage{lmodern}
+\usepackage[left=1.00in, right=1.00in, top=1.00in, bottom=1.00in]{geometry}
+\renewcommand{\ttdefault}{pcr}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{commentgray}{rgb}{0.2,0.2,0.2}
+\definecolor{stringgray}{rgb}{0.1,0.1,0.1}
+\lstset{
+	basicstyle=\footnotesize\ttfamily,
+	numbers=left,
+	numberstyle=\tiny\color{mygray},
+	frame=L,
+	escapeinside={\%*}{*)},
+	keywordstyle=\bfseries,
+  	commentstyle=\itshape\color{commentgray},
+	showstringspaces=false,
+	stringstyle=\color{stringgray},
+	ndkeywordstyle=\bfseries,
+  	morecomment=[l]{!\ }% Comment only with space after !
+}
+\renewcommand\lstlistingname{Code Fragment}
+\renewcommand\lstlistlistingname{Code Fragments}
+
+\begin{document}
+		\lstinputlisting[language=Fortran]{/home/chris/Desktop/fortranIntro/potential_field.short.f90}		
+\end{document}
